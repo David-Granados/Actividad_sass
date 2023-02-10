@@ -1,0 +1,89 @@
+/*Imports*/
+@import "variables.scss";
+@import "mixins.scss";
+@import "extends.scss";
+@import "funciones.scss";
+/*Variables*/
+$myFont: Helvetica, sans-serif;
+$myColor: green;
+$myFontSize: 18px+5;
+$myWidth: 620px+30;
+$base-color: #036;
+
+h1 {
+    color: green;
+}
+
+.container {
+    width: $myWidth;
+    font-family: $myFont;
+    font-size: $myFontSize;
+}
+
+.main-header {
+    background-color: $primary_1;
+    color: $myColor;
+    text-align: center;
+}
+
+.menu-left {
+    background-color: $primary_2;
+    color: $myColor;
+}
+
+.menu-right {
+    background-color: $primary_3;
+    color: $myColor;
+}
+/*Anidado*/
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+/*includes*/
+.mixin1 {
+    @include important-text()
+}
+
+.mixin2 {
+    @include bordered($myColor, 10px/4);
+}
+
+.box {
+    @include transform(rotate(180deg));
+}
+/*Extends*/
+.button-report {
+    @extend .button-basic;
+    background-color: red;
+}
+
+.button-submit {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+}
+.funcion{
+    width: grid-width(15);
+    color: calcularColor(20);
+}
+
+/*bucle*/
+@for $i from 1 through 3 {
+  ul:nth-child(3n + #{$i}) {
+    background-color: lighten($base-color, $i * 5%);
+  }
+}

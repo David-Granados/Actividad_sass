@@ -1,0 +1,85 @@
+/*Imports*/
+/*Variables*/
+/*Mixins*/
+/*Extends*/
+.button-basic, .button-report, .button-submit {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer; }
+
+/*Variables*/
+/*Funciones*/
+/*Variables*/
+h1 {
+  color: green; }
+
+.container {
+  width: 650px;
+  font-family: Helvetica, sans-serif;
+  font-size: 23px; }
+
+.main-header {
+  background-color: #a2b9bc;
+  color: green;
+  text-align: center; }
+
+.menu-left {
+  background-color: #b2ad7f;
+  color: green; }
+
+.menu-right {
+  background-color: #878f99;
+  color: green; }
+
+/*Anidado*/
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+/*includes*/
+.mixin1 {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue; }
+
+.mixin2 {
+  border: 2.5px solid green; }
+
+.box {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+/*Extends*/
+.button-report {
+  background-color: red; }
+
+.button-submit {
+  background-color: green;
+  color: white; }
+
+.funcion {
+  width: 740px;
+  color: #9ba3ad; }
+
+/*bucle*/
+ul:nth-child(3n + 1) {
+  background-color: #004080; }
+
+ul:nth-child(3n + 2) {
+  background-color: #004d99; }
+
+ul:nth-child(3n + 3) {
+  background-color: #0059b3; }
+
+/*# sourceMappingURL=style.css.map */

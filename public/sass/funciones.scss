@@ -1,0 +1,12 @@
+/*Variables*/
+$grid-width: 40px;
+$gutter-width: 10px;
+
+/*Funciones*/
+@function grid-width($n) {
+  @return $n * $grid-width +($n - 1) * $gutter-width;
+}
+
+@function calcularColor($n) {
+  @return #878f99+$n;
+}

@@ -1,0 +1,17 @@
+/*Mixins*/
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+@mixin bordered($color, $width) {
+    border: $width solid $color;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
