@@ -1,4 +1,5 @@
 # Actividad_sass
+Para ejecutarlo, tras npm i, usar npm run dev.
 Muestra de ejemplos del uso de sass en un proyecto web.
 Contiene:
     - Variables. 10 
